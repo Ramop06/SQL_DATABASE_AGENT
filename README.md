@@ -20,59 +20,18 @@ Built with **Python, FastAPI, SQLite, Streamlit, and LLM-based query generation*
 
 🏗️ Architecture
 
-         User
-          │
-          ▼
-     Streamlit UI
-          │
-          ▼
-      SQL Agent
-          │
-  Understands natural-language question
-          │
-    Generates SQL query
-          │
-          ▼
-     Database Layer
-          │   
-          ▼
-    SQLite Database
-          │
-          ▼
-     Query Results
-          │
-          ▼
-Streamlit / API Response
-
-
- 📁 Project Structure
-
-SQL_DATABASE_AGENT/
-│
-├── app/
-│   ├── __init__.py
-│   ├── agent.py
-│   ├── config.py
-│   ├── database.py
-│   ├── main.py
-│   └── streamlit_app.py
-│
-├── create_database.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+         User ---> Streamlit UI --->SQL Agent ---> Understands natural-language question ---> Generates SQL query ---> Database Layer ---> SQLite Database ---> Query Results ---> Streamlit / API Response
 
 
  🛠️ Tech Stack
 
-| Technology   | Purpose                           |
-| ------------ | --------------------------------- |
-| Python       | Core application                  |
-| FastAPI      | Backend API                       |
-| SQLite       | Database                          |
-| Streamlit    | Interactive UI                    |
-| LLM          | Natural-language → SQL generation |
-| Git & GitHub | Version control                   |
+ **Technology**      **Purpose**                           
+ Python            Core application                  
+ FastAPI           Backend API                       
+ SQLite            Database                          
+ Streamlit         Interactive UI                    
+ LLM               Natural-language → SQL generation 
+ Git & GitHub      Version control                   
 
 
  ⚙️ **Installation**
